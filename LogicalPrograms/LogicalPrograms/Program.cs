@@ -32,9 +32,16 @@ namespace LogicalPrograms
                         getMethod.PrimeCheck();
                         break;
                     }
+                case 4:
+                    {
+                        Console.WriteLine("Reverse Number Program");
+                        ReverseNumber getMethod = new ReverseNumber();
+                        getMethod.DigitReverse();
+                        break;
+                    }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-3)");
+                        Console.WriteLine("Enter a Number between(1-4)");
                         break;
                     }
             }
