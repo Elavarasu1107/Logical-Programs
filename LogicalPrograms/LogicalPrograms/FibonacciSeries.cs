@@ -11,19 +11,29 @@ namespace LogicalPrograms
         public void Fibonacci()
         {
             Console.WriteLine("Enter a value to get a Fibinacci Series:");
-            int userInput = Convert.ToInt32(Console.ReadLine()), indexPosition=2;
+            int userInput = Convert.ToInt32(Console.ReadLine()); 
+            int indexPosition=0;
             int[] length = new int[userInput];
             Console.WriteLine("Fibinacci Series for "+userInput+" is:");
-            length[0] = 0;
-            length[1] = 1;
-            Console.WriteLine(length[0]);
-            Console.WriteLine(length[1]);
-            while (indexPosition < userInput)
+
+            while(indexPosition<userInput)
             {
-                length[indexPosition] = length[indexPosition - 2] + length[indexPosition - 1];
-                Console.WriteLine(length[indexPosition]);
-                indexPosition++;
-            }
+                if(indexPosition == 0 || indexPosition == 1)
+                {
+                    length[indexPosition] = indexPosition;
+                    Console.WriteLine(length[indexPosition]);
+                    indexPosition++;
+                }
+                else
+                {
+                    while (indexPosition < userInput)
+                    {
+                        length[indexPosition] = length[indexPosition - 2] + length[indexPosition - 1];
+                        Console.WriteLine(length[indexPosition]);
+                        indexPosition++;
+                    }
+                }
+            } 
         }
     }
 }
