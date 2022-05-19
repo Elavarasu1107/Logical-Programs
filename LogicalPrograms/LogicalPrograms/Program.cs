@@ -25,9 +25,16 @@ namespace LogicalPrograms
                         getMethod.PerfectNumberCheck();
                         break;
                     }
+                case 3:
+                    {
+                        Console.WriteLine("Prime Number Program");
+                        PrimeNumber getMethod = new PrimeNumber();
+                        getMethod.PrimeCheck();
+                        break;
+                    }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-2)");
+                        Console.WriteLine("Enter a Number between(1-3)");
                         break;
                     }
             }
