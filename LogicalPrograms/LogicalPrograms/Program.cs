@@ -53,9 +53,16 @@ namespace LogicalPrograms
                         getMethod.MoneyChanger();
                         break;
                     }
+                case 7:
+                    {
+                        Console.WriteLine("Temperature Conversion Program");
+                        TemperatureConversion getMethod = new TemperatureConversion();
+                        getMethod.Units();
+                        break;
+                    }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-6)");
+                        Console.WriteLine("Enter a Number between(1-7)");
                         break;
                     }
             }
