@@ -46,9 +46,16 @@ namespace LogicalPrograms
                         getMethod.TimeElapsed();
                         break;
                     }
+                case 6:
+                    {
+                        Console.WriteLine("Vending Machine Program");
+                        VendingMachine getMethod = new VendingMachine();
+                        getMethod.MoneyChanger();
+                        break;
+                    }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-5)");
+                        Console.WriteLine("Enter a Number between(1-6)");
                         break;
                     }
             }
