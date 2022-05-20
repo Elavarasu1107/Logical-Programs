@@ -60,9 +60,16 @@ namespace LogicalPrograms
                         getMethod.Units();
                         break;
                     }
+                case 8:
+                    {
+                        Console.WriteLine("Temperature Conversion Program");
+                        DayofWeek getMethod = new DayofWeek();
+                        getMethod.Calender();
+                        break;
+                    }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-7)");
+                        Console.WriteLine("Enter a Number between(1-8)");
                         break;
                     }
             }
