@@ -67,9 +67,16 @@ namespace LogicalPrograms
                         getMethod.Calender();
                         break;
                     }
+                case 9:
+                    {
+                        Console.WriteLine("Monthly Payment Program");
+                        MonthlyPayment getMethod = new MonthlyPayment();
+                        getMethod.LoanInterest();
+                        break;
+                    }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-8)");
+                        Console.WriteLine("Enter a Number between(1-9)");
                         break;
                     }
             }
