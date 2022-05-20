@@ -39,9 +39,16 @@ namespace LogicalPrograms
                         getMethod.DigitReverse();
                         break;
                     }
+                case 5:
+                    {
+                        Console.WriteLine("StopWatch Program");
+                        StopWatch getMethod = new StopWatch();
+                        getMethod.TimeElapsed();
+                        break;
+                    }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-4)");
+                        Console.WriteLine("Enter a Number between(1-5)");
                         break;
                     }
             }
