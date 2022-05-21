@@ -74,9 +74,23 @@ namespace LogicalPrograms
                         getMethod.LoanInterest();
                         break;
                     }
+                case 10:
+                    {
+                        Console.WriteLine("Square Root Program");
+                        SquareRoot getMethod = new SquareRoot();
+                        getMethod.Root();
+                        break;
+                    }
+                case 11:
+                    {
+                        Console.WriteLine("Square Root Program");
+                        SquareRoot getMethod = new SquareRoot();
+                        getMethod.Root();
+                        break;
+                    }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-9)");
+                        Console.WriteLine("Enter a Number between(1-10)");
                         break;
                     }
             }
