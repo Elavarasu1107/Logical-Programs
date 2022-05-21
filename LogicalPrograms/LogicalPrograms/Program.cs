@@ -62,7 +62,7 @@ namespace LogicalPrograms
                     }
                 case 8:
                     {
-                        Console.WriteLine("Temperature Conversion Program");
+                        Console.WriteLine("Day of Week Program");
                         DayofWeek getMethod = new DayofWeek();
                         getMethod.Calender();
                         break;
@@ -83,14 +83,14 @@ namespace LogicalPrograms
                     }
                 case 11:
                     {
-                        Console.WriteLine("Square Root Program");
-                        SquareRoot getMethod = new SquareRoot();
-                        getMethod.Root();
+                        Console.WriteLine("ToBinary Program");
+                        ToBinary getMethod = new ToBinary();
+                        getMethod.BinaryConverter();
                         break;
                     }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-10)");
+                        Console.WriteLine("Enter a Number between(1-11)");
                         break;
                     }
             }
