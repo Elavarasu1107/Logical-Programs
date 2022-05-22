@@ -14,10 +14,10 @@ namespace LogicalPrograms
             int userInput=int.Parse(Console.ReadLine());
 
             double fahrenheit = (userInput * 9 / 5) + 32;
-            double celsius = (userInput - 32) * 9 / 5 ;
+            double celsius = (userInput - 32) * 5 / 9 ;
 
-            Console.WriteLine("Fahrenheit= " + fahrenheit);
-            Console.WriteLine("Celsius= " + celsius);
+            Console.WriteLine("Celsius to Fahrenheit= " + fahrenheit);
+            Console.WriteLine("Fahrenheit to Celsius= " + celsius);
         }
     }
 }

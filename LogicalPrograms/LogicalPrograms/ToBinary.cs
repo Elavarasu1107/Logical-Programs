@@ -20,8 +20,7 @@ namespace LogicalPrograms
                 remainder = userInput % 2;
                 binaryValue[indexPosition] = remainder;
                 userInput = userInput / 2;
-                indexPosition++;
-                
+                indexPosition++;  
             }
             Console.WriteLine();
             Console.Write("Binary number is: ");

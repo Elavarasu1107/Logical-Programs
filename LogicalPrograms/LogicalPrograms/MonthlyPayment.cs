@@ -10,7 +10,7 @@ namespace LogicalPrograms
     {
         public void LoanInterest()
         {
-            double P, Y, R, n, r, payment, EMI;
+            double P, Y, R, n, r, payment;
             Console.WriteLine("Enter the years:");
             Y = double.Parse(Console.ReadLine());
             Console.WriteLine("Enter the principal interest:");
