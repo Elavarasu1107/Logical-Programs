@@ -18,6 +18,7 @@ namespace LogicalPrograms
             Console.WriteLine("Enter 10 to Square Root Program");
             Console.WriteLine("Enter 11 to ToBinary Program");
             Console.WriteLine("Enter 12 to Coupon Number Program");
+            Console.WriteLine("Enter 13 to Nibbles Swap Program");
 
             Console.WriteLine("Enter a value to choose the Program");
             int userInput = Convert.ToInt32(Console.ReadLine());
@@ -108,9 +109,16 @@ namespace LogicalPrograms
                         getMethod.Distinct();
                         break;
                     }
+                case 13:
+                    {
+                        Console.WriteLine("Nibbles Swap Program");
+                        NibbleSwap getMethod = new NibbleSwap();
+                        getMethod.Binary();
+                        break;
+                    }
                 default:
                     {
-                        Console.WriteLine("Enter a Number between(1-12)");
+                        Console.WriteLine("Enter a Number between(1-13)");
                         break;
                     }
             }

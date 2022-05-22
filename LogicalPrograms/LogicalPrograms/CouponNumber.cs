@@ -18,7 +18,7 @@ namespace LogicalPrograms
             for (int i = 0; i < number; i++)
             {
                 int arrayChecker = 0;
-                int randomCheck = value.Next(100, 1000);
+                int randomCheck = value.Next(10000, 100000);
 
                 for (int j = 0; j < number; j++)
                 {
